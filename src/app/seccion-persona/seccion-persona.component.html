@@ -1,0 +1,13 @@
+<h1 class="titulo">Aqui encontraras a todas las personas registradas</h1>
+<form class="form-eliminar" [formGroup]="formEliminar" (ngSubmit)="deletePerson()">
+  <input type="text" class="eliminar-data" placeholder="Nombre a eliminar" formControlName="name">
+  <button type="submit" class="eliminar-btn" >Eliminar</button>
+</form>
+<div class="seccion-persona">
+  <div class="persona" *ngFor="let per of personas">
+    <p class="persona-txt">Nombre : {{ per.nombre }}</p>
+    <p class="persona-txt">Apellido : {{ per.apellido }}</p>
+    <p class="persona-txt">DNI : {{ per.dni }}</p>
+    <p class="persona-txt">Edad : {{ per.edad }} años</p>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="contenedor-ingreso">
+  <h1 class="ingreso-titulo">Ingreso de nuevos clientes</h1>
+  <form class="ingreso-form" [formGroup]="formPersona" (ngSubmit)="saveData()">
+    <input class="ingreso-data" type="text" placeholder="Nombres" formControlName="nombre" >
+    <input class="ingreso-data" type="text" placeholder="Apellidos" formControlName="apellido" >
+    <input class="ingreso-data" type="text" placeholder="DNI" formControlName="dni" >
+    <input class="ingreso-data" type="text" placeholder="Edad" formControlName="edad" >
+    <button type="submit" class="ingreso-btn">Enviar</button>
+  </form>
+</div>
+
